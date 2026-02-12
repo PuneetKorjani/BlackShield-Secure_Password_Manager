@@ -40,6 +40,9 @@ The same password regenerates the same key for decryption during login.
 TOTP-based 2FA adds an additional authentication layer.
 
 Auto-lock protects the vault during inactivity.
+
+
+
 blackshield/
 ├── main.py # Application entry point
 ├── app.py # App controller
