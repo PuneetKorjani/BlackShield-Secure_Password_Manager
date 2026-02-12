@@ -40,7 +40,6 @@ BlackShield follows a secure design model:
 
 
 
-
 blackshield/
 ├── main.py # Application entry point
 ├── app.py # App controller
@@ -48,19 +47,16 @@ blackshield/
 ├── encryptor.py # Encryption & key derivation logic
 ├── vault.py # Vault operations
 ├── totp.py # TOTP-based 2FA implementation
-│
 ├── gui/
 │ ├── screens/
 │ │ ├── welcome.py
 │ │ ├── login.py
-│ │ ├── register.py
-│ │ └── vault.py
-│
+│ │ └── register.py
+│ └── vault.py
 ├── assets/ # QR code images & UI assets
 ├── data/ # Encrypted vault storage (excluded from version control)
 ├── LICENSE
 └── README.md
-
 
 ---
 
