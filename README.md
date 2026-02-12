@@ -40,6 +40,86 @@ The same password regenerates the same key for decryption during login.
 TOTP-based 2FA adds an additional authentication layer.
 
 Auto-lock protects the vault during inactivity.
+blackshield/
+├── main.py # Application entry point
+├── app.py # App controller
+├── auth.py # Master password & authentication logic
+├── encryptor.py # Encryption & key derivation logic
+├── vault.py # Vault operations
+├── totp.py # TOTP-based 2FA implementation
+│
+├── gui/
+│ ├── screens/
+│ │ ├── welcome.py
+│ │ ├── login.py
+│ │ ├── register.py
+│ │ └── vault.py
+│
+├── assets/ # QR code images & UI assets
+├── data/ # Encrypted vault storage (excluded from version control)
+├── LICENSE
+└── README.md
+
+
+---
+
+## ⚙️ Installation
+
+### Requirements
+
+- Python 3.8+
+- pip
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+python main.py
+
+🔐 How It Works
+
+Registration
+
+User sets a master password
+
+A key is derived using a secure key derivation function
+
+A TOTP secret is generated for 2FA setup
+
+Vault encryption key is created
+
+Login
+
+Master password is entered
+
+Encryption key is regenerated
+
+Encrypted vault file is decrypted
+
+2FA verification is required
+
+Vault unlocks upon successful authentication
+
+
+🎯 Educational Purpose
+
+BlackShield demonstrates:
+
+Practical encryption implementation
+
+Secure credential storage concepts
+
+Two-factor authentication integration
+
+Secure session timeout handling
+
+GUI-based security application design
+
+📜 License
+
+This project is licensed under the MIT License.
+
+BlackShield is an extended and enhanced version of an MIT-licensed open-source vault application, redesigned with additional security features and UI improvements.
 
 ---
 
